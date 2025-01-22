@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Feedback Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="#section1">About Feedback</a>
+    <a href="#section2">Feedback Form</a>
+  </nav>
+
+  <section id="section1">
+    <h1>About Feedback</h1>
+    <p>Feedback is a vital tool to improve and refine any process, product, or service. It allows us to understand user experiences, identify strengths, and address areas needing improvement.</p>
+    <p>By sharing your thoughts, you contribute to creating better and more efficient solutions. Your input matters!</p>
+  </section>
+
+  <section id="section2">
+    <h1>Feedback Form</h1>
+    <form id="feedbackForm">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+      <label for="place">Place:</label><br>
+      <input type="text" id="place" name="place" placeholder="Enter your location" required><br><br>
+
+      <label for="comments">Comments:</label><br>
+      <textarea id="comments" name="comments" rows="4" placeholder="Your feedback here..." required></textarea><br><br>
+
+      <h3>Rate Us:</h3>
+
+      <label for="designRating">Design:</label><br>
+      <input type="range" id="designRating" name="designRating" min="1" max="10" value="5">
+      <span id="designValue">5</span><br><br>
+
+      <label for="usabilityRating">Usability:</label><br>
+      <input type="range" id="usabilityRating" name="usabilityRating" min="1" max="10" value="5">
+      <span id="usabilityValue">5</span><br><br>
+
+      <label for="performanceRating">Performance:</label><br>
+      <input type="range" id="performanceRating" name="performanceRating" min="1" max="10" value="5">
+      <span id="performanceValue">5</span><br><br>
+
+      <button type="submit">Submit Feedback</button>
+    </form>
+    <div id="thankYouMessage" class="hidden">
+      <h2>Thank you for your feedback!</h2>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Sainathreddy Nerusupalli</p>
+    <p>
+      <a href="https://www.linkedin.com/in/sainath666" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/sainath-666" target="_blank">GitHub</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
